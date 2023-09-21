@@ -8,4 +8,4 @@
 
    ตามภาพเลย จากนั้นก็เจอ flag แบบง่ายๆ
    
-![img](21.png?raw=true)
+![img](22.png?raw=true)
