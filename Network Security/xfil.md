@@ -41,6 +41,6 @@ with open("output.jpg",'wb') as f:
 ```
 
 `Flag` ก็ตามภาพเลยจ้า
-![img1](5.png?raw=true)
+![img1](5.jpg?raw=true)
 
 
