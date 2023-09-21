@@ -10,4 +10,6 @@
 
 ![img1](3.png?raw=true)
 
-4. ลองเอาค่า `ffd8` ไป search ใน [garykessler](https://www.garykessler.net/library/file_sigs.html) 
+4. ลองเอาค่า `ffd8` ไป search ใน [garykessler](https://www.garykessler.net/library/file_sigs.html)
+
+![img1](4.png?raw=true)
