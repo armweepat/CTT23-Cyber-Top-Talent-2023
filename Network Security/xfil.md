@@ -2,7 +2,7 @@
 2. ผู้ออกโจทย์ได้ให้ไฟล์ชื่อ xfil.pcapng มา ให้เราทำการเปิดด้วยโปรแกรม Wireshark
 
 ![img1](1.png?raw=true)
-3. สังเกต value ค่า Queries ใน packet ที่1 จะพบว่าขึ้นต้นด้วย `ffd8...`
+3. สังเกต value ค่า Queries ใน packet ที่1 จะพบว่าขึ้นต้นด้วย `ffd8...` *ถ้า packet มาลักษณะแบบนี้มีแค่ protocol เดียวไม่ต้องคิดไรมาก ไล่หาอะไรแปลกๆดูเลย55555*
 
 ![img1](2.png?raw=true)
 
@@ -39,3 +39,8 @@ hexWS = "".join(map(str, my_array))
 with open("output.jpg",'wb') as f:
     f.write(bytes.fromhex(hexWS))
 ```
+
+`Flag` ก็ตามภาพเลยจ้า
+![img1](5.png?raw=true)
+
+
