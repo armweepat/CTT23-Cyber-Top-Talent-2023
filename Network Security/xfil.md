@@ -14,7 +14,7 @@
 
 ![img1](4.png?raw=true)
 
-5. เขียน python เพื่อดึง value ของ parameter ค่า Queries ไปเปลี่ยนเป็นไฟล์ .jpg ซึ่งคือไฟล์รูปภาพ
+5. เขียน python เพื่อดึง value ของ parameter ค่า Queries ไปเปลี่ยนเป็นไฟล์ .jpg ซึ่งคือไฟล์รูปภาพ (ถ้าใครขยัน Copy เอาแล้วก็เอาไปสร้างไฟล์ใหม่ใน [HexEd](https://hexed.it/) ก็ได้ แต่มัน 218 packet นะ5555 เลยให้พี่เป้ย เทพโปรแกรมมิ่ง เขียนโค้ดดึงให้)
 
 ```python
 from scapy.all import PcapReader, IP ,ICMP
