@@ -10,6 +10,32 @@
 
 ![img1](3.png?raw=true)
 
-4. ลองเอาค่า `ffd8` ไป search ใน [garykessler](https://www.garykessler.net/library/file_sigs.html)
+4. ลองเอาค่า `ffd8` ไป search ใน [garykessler](https://www.garykessler.net/library/file_sigs.html) จะพบว่าเป็นไฟล์ .JPG
 
 ![img1](4.png?raw=true)
+
+5. เขียน python เพื่อดึง value ของ parameter ค่า Queries
+
+```python
+from scapy.all import PcapReader, IP ,ICMP
+import numpy as np
+import codecs
+pcapng_file = 'xfil.pcapng'
+desired_src_ip = '172.16.67.128'
+tempdata = []
+
+def process_packet(packet):
+    if packet[IP].dst == desired_src_ip:
+        cut = str(packet).split("b'")[1].split('.')[0]
+        tempdata.append(cut)
+        pass
+        
+with PcapReader(pcapng_file) as pcap_reader:
+    for packet in pcap_reader:
+        process_packet(packet)
+
+my_array = np.array(tempdata)
+hexWS = "".join(map(str, my_array))
+with open("output.jpg",'wb') as f:
+    f.write(bytes.fromhex(hexWS))
+```
