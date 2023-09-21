@@ -9,3 +9,5 @@
 ซึ่งเมื่อเห็นในรูปแบบนี้ ทำให้เราคิดถึงในเรื่องของ `file signature` จึงลองเลื่อนลงไปดู packet สุดท้าย พบว่า ลงท้ายด้วย `ffd9` 
 
 ![img1](3.png?raw=true)
+
+4. ลองเอาค่า `ffd8` ไป search ใน [garykessler](https://www.garykessler.net/library/file_sigs.html) 
