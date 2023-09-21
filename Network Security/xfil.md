@@ -14,7 +14,7 @@
 
 ![img1](4.png?raw=true)
 
-5. เขียน python เพื่อดึง value ของ parameter ค่า Queries
+5. เขียน python เพื่อดึง value ของ parameter ค่า Queries ไปเปลี่ยนเป็นไฟล์ .jpg ซึ่งคือไฟล์รูปภาพ
 
 ```python
 from scapy.all import PcapReader, IP ,ICMP
