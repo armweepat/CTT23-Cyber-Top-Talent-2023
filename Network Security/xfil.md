@@ -1,0 +1,3 @@
+โจทย์ข้อ xfil ของรายการ Cyber Top Talent 2023 (Point 200)
+ผู้ออกโจทย์ได้ให้ไฟล์ชื่อ xfil.pcapng มา ให้เราทำการเปิดด้วยโปรแกรม Wireshark 
+
