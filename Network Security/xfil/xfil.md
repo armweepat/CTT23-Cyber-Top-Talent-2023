@@ -1,8 +1,7 @@
-1. โจทย์ข้อ xfil ของรายการ Cyber Top Talent 2023 (Point 200) 
-2. ผู้ออกโจทย์ได้ให้ไฟล์ชื่อ xfil.pcapng มา ให้เราทำการเปิดด้วยโปรแกรม Wireshark
+1. โจทย์ข้อ xfil ของรายการ Cyber Top Talent 2023 (Point 200) ออกโจทย์ได้ให้ไฟล์ชื่อ xfil.pcapng มา ให้เราทำการเปิดด้วยโปรแกรม Wireshark
 
 ![img1](1.png?raw=true)
-3. สังเกต value ค่า Queries ใน packet ที่1 จะพบว่าขึ้นต้นด้วย `ffd8...` *ถ้า packet มาลักษณะแบบนี้มีแค่ protocol เดียวไม่ต้องคิดไรมาก ไล่หาอะไรแปลกๆดูเลย55555*
+2. สังเกต value ค่า Queries ใน packet ที่1 จะพบว่าขึ้นต้นด้วย `ffd8...` *ถ้า packet มาลักษณะแบบนี้มีแค่ protocol เดียวไม่ต้องคิดไรมาก ไล่หาอะไรแปลกๆดูเลย55555*
 
 ![img1](2.png?raw=true)
 
@@ -10,11 +9,11 @@
 
 ![img1](3.png?raw=true)
 
-4. ลองเอาค่า `ffd8` ไป search ใน [garykessler](https://www.garykessler.net/library/file_sigs.html) จะพบว่าเป็นไฟล์ .JPG
+3. ลองเอาค่า `ffd8` ไป search ใน [garykessler](https://www.garykessler.net/library/file_sigs.html) จะพบว่าเป็นไฟล์ .JPG
 
 ![img1](4.png?raw=true)
 
-5. เขียน python เพื่อดึง value ของ parameter ค่า Queries ไปเปลี่ยนเป็นไฟล์ .jpg ซึ่งคือไฟล์รูปภาพ (ถ้าใครขยัน Copy เอาแล้วก็เอาไปสร้างไฟล์ใหม่ใน [HexEd](https://hexed.it/) ก็ได้ แต่มัน 218 packet นะ5555 เลยให้พี่เป้ย เทพโปรแกรมมิ่ง เขียนโค้ดดึงให้)
+4. เขียน python เพื่อดึง value ของ parameter ค่า Queries ไปเปลี่ยนเป็นไฟล์ .jpg ซึ่งคือไฟล์รูปภาพ (ถ้าใครขยัน Copy เอาแล้วก็เอาไปสร้างไฟล์ใหม่ใน [HexEd](https://hexed.it/) ก็ได้ แต่มัน 218 packet นะ5555 เลยให้พี่เป้ย เทพโปรแกรมมิ่ง เขียนโค้ดดึงให้)
 
 ```python
 from scapy.all import PcapReader, IP ,ICMP
